@@ -1,3 +1,18 @@
+<!--STYLE-START-->
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/prince53454/prince53454/main/assets/banner.svg" width="100%"/>
+
+# ⟦ Portfolio ⟧
+
+![status](https://img.shields.io/badge/STATUS-ONLINE-00ff9c?style=for-the-badge&labelColor=020806)
+![stars](https://img.shields.io/github/stars/prince53454/Portfolio?style=for-the-badge&labelColor=020806&color=ff2d2d)
+
+<img src="https://raw.githubusercontent.com/prince53454/prince53454/main/assets/divider.svg" width="100%"/>
+
+</div>
+<!--STYLE-END-->
+
 # 👨‍💻 Vishwajeet Jaiswal — Full Stack Developer Portfolio
 
 A modern, interactive portfolio website built with vanilla HTML, CSS, and JavaScript. Showcasing my full-stack development skills, projects, certifications, and career journey.
