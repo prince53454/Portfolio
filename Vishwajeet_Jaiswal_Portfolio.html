@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vishwajeet Jaiswal ? full stack developer building web applications with React, Node.js and databases. Explore selected projects and get in touch.">
+<meta name="theme-color" content="#10110f">
 <title>Vishwajeet Jaiswal — Full Stack Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -325,6 +327,82 @@
     .section{padding:52px 22px;}
   }
 </style>
+<style>
+  /* Portfolio refresh: ink, warm paper, and electric lime. */
+  :root{--bg:#10110f;--panel:#191b17;--panel-alt:#22251e;--border:#34382c;--text:#f2f2e8;--muted:#a5ab99;--accent:#cbf477;--accent-soft:rgba(203,244,119,.1);--amber:#ebcb8b;--pink:#e9a7b5;--purple:#c2b4ef;--sidebar-w:0px;--radius:18px;}
+  body::before{background-size:90px 90px;opacity:.08;}
+  body{background:radial-gradient(ellipse at 85% 5%,#29301a 0,transparent 36%),var(--bg);}
+  .sidebar{width:100%;height:82px;bottom:auto;flex-direction:row;align-items:center;justify-content:space-between;padding:0 5vw;background:rgba(16,17,15,.92);backdrop-filter:blur(18px);border-right:0;border-bottom:1px solid var(--border);}
+  .sidebar-header{border:0;padding:0;}
+  .avatar-sm{width:38px;height:38px;filter:grayscale(1);}
+  .sidebar-header .role{color:var(--accent);font-size:10px;}
+  .file-tree{display:flex;flex:none;gap:3px;padding:0;overflow:visible;}
+  .tree-label,.tree-item .dot,.sidebar-footer{display:none;}
+  .tree-item{font-family:Inter,sans-serif;font-size:12px;padding:9px 11px;border:0;border-radius:30px;}
+  .tree-item.active{border:0;background:var(--accent-soft);}
+  main{margin:0;max-width:1440px;margin-inline:auto;}
+  .section{max-width:none;padding:100px 6vw;scroll-margin-top:80px;}
+  .section-tag{font-size:11px;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:12px;}
+  .section-tag::before{content:'';width:24px;height:1px;background:var(--accent);}
+  .section h2{font-size:clamp(32px,4vw,52px);letter-spacing:-.045em;margin-bottom:36px;}
+  .hero{padding-top:175px;padding-bottom:80px;position:relative;}
+  .hero-grid{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:5vw;align-items:center;}
+  .hero-lede{grid-column:1;grid-row:1;margin:0;}
+  .hero-lede::before{content:'VISHWAJEET JAISWAL / FULL STACK DEVELOPER';display:block;color:var(--accent);font:10px 'JetBrains Mono',monospace;letter-spacing:.12em;margin-bottom:26px;}
+  .hero-lede h1{font-size:clamp(40px,4.8vw,70px);letter-spacing:-.055em;line-height:1.07;}
+  .hero-lede h1 span{color:var(--accent);}
+  .hero-lede p{font-size:15px;line-height:1.85;margin-top:24px;}
+  .hero-grid>.editor{grid-column:2;grid-row:1;transform:rotate(2deg);box-shadow:14px 20px 0 #cbf4770c,0 30px 70px #0005;border-color:#49513a;}
+  .editor-body{padding:25px 18px;min-height:300px;overflow-x:auto;}
+  .code-line{font-size:clamp(10px,1vw,13px);line-height:2.1;}
+  .editor-tabs{background:#25291f;}
+  .editor-tab{font-size:11px;}
+  .code-line .ln{color:#657052;}
+  .btn{border-radius:30px;font-size:11px;padding:13px 20px;min-height:44px;justify-content:center;}
+  .btn-primary{box-shadow:0 5px 24px #cbf4771a;}
+  .btn-ghost:hover{background:var(--accent-soft);transform:translateY(-2px);}
+  a:focus-visible,.tree-item:focus-visible,.editor-tab:focus-visible{outline:2px solid var(--accent);outline-offset:5px;}
+  .hero-strip{display:flex;gap:26px;align-items:center;flex-wrap:wrap;margin-top:65px;padding-top:25px;border-top:1px solid var(--border);font:11px 'JetBrains Mono',monospace;color:var(--muted);}
+  .hero-strip strong{color:var(--text);font-weight:400;}
+  .hero-strip .strip-label{color:var(--accent);margin-right:auto;}
+  .projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;counter-reset:project;}
+  .browser{counter-increment:project;position:relative;display:flex;flex-direction:column;transition:transform .25s,border-color .25s;}
+  .browser:hover{transform:translateY(-5px);border-color:#69794b;}
+  .browser-bar{padding:15px 18px;background:transparent;}
+  .browser-url{font-size:9px;background:transparent;border:0;padding:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .project-body{padding:28px;display:flex;flex-direction:column;flex:1;}
+  .project-body::before{content:'PROJECT / 0' counter(project);font:10px 'JetBrains Mono',monospace;letter-spacing:.13em;color:var(--accent);margin-bottom:22px;}
+  .project-title{font-size:25px;letter-spacing:-.03em;line-height:1.25;margin-bottom:12px;}
+  .project-stack{font-size:10px;line-height:1.9;}
+  .project-desc{font-size:13px;line-height:1.8;}
+  .tag-row{margin-top:auto;padding-top:10px;}
+  .tag{border-radius:30px;font-size:9px;background:var(--panel-alt);}
+  .terminal{box-shadow:0 12px 40px #0002;}
+  #skills .terminal-body{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;padding:30px;}
+  #skills .terminal-body>div:first-child{grid-column:1/-1;}
+  .skill-group,.skill-group:first-child{margin:0;}
+  .skill-group-label{color:var(--text);margin-bottom:14px;}
+  .skill-pill{font-size:11px;border-radius:6px;padding:7px 10px;}
+  .timeline{display:grid;grid-template-columns:1fr 1fr;gap:32px 60px;}
+  .timeline::before{display:none;}
+  .commit{padding:0 0 22px;border-bottom:1px solid var(--border);}
+  .commit-title{font-size:19px;}
+  .commit-body{font-size:13px;line-height:1.85;}
+  .cert{padding:22px;border-radius:12px;}
+  .cert-icon{background:transparent;font-size:18px;}
+  .stat{background:transparent;border-width:0 0 1px;border-radius:0;padding:20px 0;}
+  .stat-num{font-size:54px;letter-spacing:-.05em;}
+  .stat-label{font-size:10px;}
+  .achieve-list li{font-size:13px;}
+  #contact{background:linear-gradient(125deg,#252e19,transparent 75%);}
+  #contact h2{font-size:clamp(40px,6vw,76px);max-width:700px;line-height:1.05;}
+  .contact-term{max-width:740px;}
+  footer{max-width:1440px;margin:auto;padding:28px 6vw;font-size:10px;}
+  @media(min-width:1100px){#projects .browser:first-child{grid-column:1/-1;}.projects .browser:first-child .project-body{padding:36px;}.projects .browser:first-child .project-title{font-size:36px;}}
+  @media(max-width:1050px){.sidebar{padding:0 3vw;}.tree-item{font-size:10px;padding:9px 7px;}.hero-grid{gap:25px;}.hero-lede h1{font-size:48px;}}
+  @media(max-width:860px){.sidebar{display:none;}.topbar{background:rgba(16,17,15,.95);backdrop-filter:blur(15px);padding:8px;}.topbar .tree-item{font-size:11px;padding:10px;border-radius:0;}.section{padding:64px 24px;scroll-margin-top:65px;}.hero{padding-top:65px;}.hero-grid{grid-template-columns:1fr;gap:42px;}.hero-lede{grid-column:1;grid-row:1;}.hero-grid>.editor{grid-column:1;grid-row:2;transform:rotate(1deg);max-width:600px;width:100%;}.hero-lede h1{font-size:clamp(44px,8vw,68px);max-width:650px;}.code-line{font-size:12px;}.hero-strip{margin-top:45px;gap:18px;}.hero-strip .strip-label{width:100%;}#skills .terminal-body{grid-template-columns:1fr 1fr;}.project-body{padding:22px;}.project-title{font-size:22px;}}
+  @media(max-width:560px){.projects,.timeline{grid-template-columns:1fr;}.hero-lede::before{font-size:9px;letter-spacing:.06em;}.hero-lede p{font-size:14px;}.hero-cta{gap:8px;}.btn{padding:12px 15px;font-size:10px;}#skills .terminal-body{grid-template-columns:1fr;padding:24px;}.editor-body{padding:22px 12px;}.code-line{font-size:10px;}.hero-strip{font-size:9px;}.contact-line{font-size:11px;overflow-wrap:anywhere;}.contact-term .terminal-body{padding:24px 16px;}.section h2{margin-bottom:28px;}}
+</style>
 </head>
 <body>
 
@@ -338,13 +416,13 @@
   </div>
   <div class="file-tree">
     <div class="tree-label">portfolio/</div>
-    <div class="tree-item" data-target="hero"><span class="dot"></span>profile.jsx</div>
-    <div class="tree-item" data-target="skills"><span class="dot"></span>skills.json</div>
-    <div class="tree-item" data-target="timeline"><span class="dot"></span>career.log</div>
-    <div class="tree-item" data-target="projects"><span class="dot"></span>projects/</div>
-    <div class="tree-item" data-target="certs"><span class="dot"></span>certifications.md</div>
-    <div class="tree-item" data-target="achievements"><span class="dot"></span>achievements.md</div>
-    <div class="tree-item" data-target="contact"><span class="dot"></span>contact.txt</div>
+    <div class="tree-item" role="link" tabindex="0" data-target="hero"><span class="dot"></span>About</div>
+    <div class="tree-item" role="link" tabindex="0" data-target="skills"><span class="dot"></span>Skills</div>
+    <div class="tree-item" role="link" tabindex="0" data-target="timeline"><span class="dot"></span>Journey</div>
+    <div class="tree-item" role="link" tabindex="0" data-target="projects"><span class="dot"></span>Projects</div>
+    <div class="tree-item" role="link" tabindex="0" data-target="certs"><span class="dot"></span>Credentials</div>
+    <div class="tree-item" role="link" tabindex="0" data-target="achievements"><span class="dot"></span>Highlights</div>
+    <div class="tree-item" role="link" tabindex="0" data-target="contact"><span class="dot"></span>Contact</div>
   </div>
   <div class="sidebar-footer">
     <span class="status-dot"></span>open to opportunities
@@ -355,13 +433,13 @@
 </nav>
 
 <div class="topbar" id="topbar">
-  <div class="tree-item" data-target="hero">profile.jsx</div>
-  <div class="tree-item" data-target="skills">skills.json</div>
-  <div class="tree-item" data-target="timeline">career.log</div>
-  <div class="tree-item" data-target="projects">projects/</div>
-  <div class="tree-item" data-target="certs">certifications.md</div>
-  <div class="tree-item" data-target="achievements">achievements.md</div>
-  <div class="tree-item" data-target="contact">contact.txt</div>
+  <div class="tree-item" role="link" tabindex="0" data-target="hero">About</div>
+  <div class="tree-item" role="link" tabindex="0" data-target="skills">Skills</div>
+  <div class="tree-item" role="link" tabindex="0" data-target="timeline">Journey</div>
+  <div class="tree-item" role="link" tabindex="0" data-target="projects">Projects</div>
+  <div class="tree-item" role="link" tabindex="0" data-target="certs">Credentials</div>
+  <div class="tree-item" role="link" tabindex="0" data-target="achievements">Highlights</div>
+  <div class="tree-item" role="link" tabindex="0" data-target="contact">Contact</div>
 </div>
 
 <main>
@@ -418,6 +496,7 @@
         </div>
       </div>
     </div>
+    <div class="hero-strip"><span class="strip-label">FROM IDEA TO INTERFACE</span><strong>React / Node.js</strong><span>APIs &amp; databases</span><span>Based in Uttar Pradesh, India</span></div>
   </section>
 
   <!-- SKILLS -->
@@ -493,7 +572,7 @@
   <!-- TIMELINE -->
   <section class="section" id="timeline">
     <div class="section-tag">03</div>
-    <h2>career.log</h2>
+    <h2>The journey so far.</h2>
     <div class="timeline">
 
       <div class="commit">
@@ -532,8 +611,57 @@
   <!-- PROJECTS -->
   <section class="section" id="projects">
     <div class="section-tag">04</div>
-    <h2>Projects</h2>
+    <h2>Selected work<span style="color:var(--accent)">.</span></h2>
     <div class="projects">
+
+      <div class="browser">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span>
+          </div>
+          <div class="browser-url">github.com/prince53454/Volta-Banking-Ledger</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Volta Banking Ledger</div>
+          <div class="project-stack">React &middot; Vite &middot; Node.js &middot; Express &middot; MongoDB</div>
+          <div class="project-desc">
+            <ul>
+              <li>Digital banking and ledger platform built around double-entry accounting.</li>
+              <li>Uses MongoDB multi-document ACID transactions to keep related financial records consistent.</li>
+              <li>Combines a React and Vite frontend with an Express backend and JWT authentication.</li>
+            </ul>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Double-entry ledger</span>
+            <span class="tag">ACID transactions</span>
+            <span class="tag">JWT authentication</span>
+          </div>
+          <div class="hero-cta" style="margin-top:16px;">
+            <a class="btn btn-ghost" href="https://github.com/prince53454/Volta-Banking-Ledger" target="_blank" rel="noopener">View code &#8599;</a>
+            <a class="btn btn-ghost" href="https://volta-banking-ledger.vercel.app" target="_blank" rel="noopener">Live demo &#8599;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="browser">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span>
+          </div>
+          <div class="browser-url">github.com/prince53454/Spotify-clone</div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Spotify Clone</div>
+          <div class="project-desc">A Spotify-inspired music interface project.</div>
+          <div class="tag-row">
+            <span class="tag">Music</span>
+            <span class="tag">UI recreation</span>
+          </div>
+          <div style="margin-top:16px;">
+            <a class="btn btn-ghost" href="https://github.com/prince53454/Spotify-clone" target="_blank" rel="noopener">View code &#8599;</a>
+          </div>
+        </div>
+      </div>
 
       <div class="browser">
         <div class="browser-bar">
@@ -671,7 +799,7 @@
     <div class="stats-grid">
       <div class="stat"><div class="stat-num">7.2</div><div class="stat-label">CGPA · B.Tech CSE</div></div>
       <div class="stat"><div class="stat-num">84%</div><div class="stat-label">Class XII, CBSE</div></div>
-      <div class="stat"><div class="stat-num">2</div><div class="stat-label">Full-stack / ML projects shipped</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Projects showcased</div></div>
       <div class="stat"><div class="stat-num">5</div><div class="stat-label">Certifications earned</div></div>
     </div>
     <ul class="achieve-list">
@@ -685,7 +813,7 @@
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="section-tag">07</div>
-    <h2>Contact</h2>
+    <h2>Let's build something that matters.</h2>
     <div class="terminal contact-term">
       <div class="terminal-head">
         <span class="dot" style="background:#ff5f57"></span>
@@ -711,9 +839,16 @@
 
 </main>
 
-<footer>© 2026 Vishwajeet Jaiswal — built with React-flavored HTML, no framework required.</footer>
+<footer>© 2026 Vishwajeet Jaiswal — Designed &amp; built by Vishwajeet Jaiswal.</footer>
 
 <script>
+  document.querySelectorAll('.tree-item, .editor-tab').forEach(control => {
+    control.tabIndex = 0;
+    control.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); control.click(); }
+    });
+  });
+
   // Tab switch in hero editor
   document.querySelectorAll('.editor-tab').forEach(tab=>{
     tab.addEventListener('click', ()=>{
